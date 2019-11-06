@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.scss";
-import Item from "../Item";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ItemEp from "../ItemEp";
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -15,12 +15,12 @@ class Carousel extends React.Component {
   }
 
   async componentDidMount() {
-    const result = await fetch("http://localhost:3001/api/covers");
+    const result = await fetch("http://localhost:3001/episodes");
     const resultJson = await result.json();
 
     console.log(resultJson);
     this.setState({
-      carouseles: resultJson.covers
+      carouseles: resultJson.episodes
     });
   }
 
@@ -42,7 +42,6 @@ class Carousel extends React.Component {
     return (
       <div className="list-container">
         {this.state.carouseles.map((carousel, i) => {
-          console.log(carousel);
           return (
             <React.Fragment>
               <div className="list-title-container">
@@ -51,7 +50,7 @@ class Carousel extends React.Component {
               <div className="list-images-container">
                 <Slider {...settings}>
                   {carousel.items.map((item, key) => {
-                    return <Item item={item} key={key} />;
+                    return <ItemEp item={item} key={key} />;
                   })}
                 </Slider>
               </div>

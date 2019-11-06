@@ -1,25 +1,24 @@
 .list-container {
-	width: 100%;
-	height: 180px;
-	display: flex;
-	flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: white;
+  margin-top: 0;
+  //display: flex;
+  //flex-direction: column;
 }
 .list-title-container {
-	width: 100%;
-	height: 40px;
-	margin-left: 50px;
-	margin-top: 0;
-	font-family: Helvetica, sans-serif;
-	font-size: 16px;
-	display: flex;
-	flex-direction: column-reverse;
-	align-items: flex-start;
+  width: 100%;
+  height: 35px;
+  margin-left: 50px;
+  margin-top: 40px;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
 }
 .list-images-container {
-	width: 100%;
-	height: 140px;
-	margin-left: 50px;
-	display: flex;
-	overflow: hidden;
-	
+  width: 100%;
+  height: 150px;
+  margin-left: 50px;
 }

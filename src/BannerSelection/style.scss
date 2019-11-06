@@ -1,0 +1,155 @@
+.mobile-section-banner {
+  display: none;
+}
+.section-banner {
+  color: white;
+  width: 100%;
+  height: 500px;
+  background-image: url("https://www.tribunapr.com.br/wp-content/uploads/sites/1/2018/11/breaking-bad.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.section-banner-info {
+  width: 30%;
+  height: 500px;
+  margin-top: 30px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.banner-logo-container {
+  background-image: url("https://logodownload.org/wp-content/uploads/2017/07/breaking-bad-logo.png");
+  background-size: cover;
+  width: 170px;
+  height: 100px;
+  margin-top: 10px;
+}
+.banner-general-info {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  .coincidence {
+    color: rgb(1, 61, 1);
+  }
+  .clasification {
+    border: 1px solid white;
+    width: 40px;
+    text-align: center;
+  }
+}
+.banner-description {
+  width: 120%;
+  height: 60px;
+  margin-top: 190px;
+  position: absolute;
+  //border: 1px solid black;
+}
+.section-banner-buttons {
+  width: 90%;
+  height: 40px;
+  margin-top: 285px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.button-margin {
+  margin-left: 20px;
+}
+.banner-extra-info {
+  width: 120%;
+  height: 30px;
+  margin-top: 320px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  //   i {
+  //     height: 30px;
+  //     width: 30px;
+  //     border-radius: 50%;
+  //     border: 1px solid white;
+  //     line-height: 30px;
+  //     text-align: center;
+  //     position: absolute;
+  //   }
+  .banner-extra-info-text {
+    height: 30px;
+    font-size: 14px;
+    text-align: top;
+    margin-left: 50px;
+    margin-top: -10px;
+    position: absolute;
+  }
+}
+.banner-details {
+  width: 100%;
+  height: 90px;
+  margin-top: 365px;
+  margin-left: 5px;
+  position: absolute;
+  font-size: 12px;
+  line-height: 1px;
+  vertical-align: top;
+}
+.banner-content-selector {
+  width: 100%;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  //border: 1px solid black;
+  .content-sections-row {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    //border: 1px solid black;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-banner {
+    display: none;
+  }
+  .mobile-section-banner {
+    background-image: url("https://www.tribunapr.com.br/wp-content/uploads/sites/1/2018/11/breaking-bad.jpg");
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin-top: 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      color: white;
+      margin-top: 100px;
+    }
+  }
+  .mobile-section-banner-info {
+    margin-left: 20px;
+  }
+  .mobile-section-banner-details {
+    width: 45%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 3px;
+  }
+}

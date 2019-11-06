@@ -1,10 +1,17 @@
-.main-container {
+.mobile-banner {
+  display: none;
+}
+
+.banner-home {
+  margin-top: 0;
+  width: 100%;
+  height: 400px;
   background-image: url("https://rainhavermelha.com/wp-content/uploads/2019/04/Z-Nation-Black-Summer-Season-2.jpg");
   //background-color: $mainColor;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 700px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   color: white;
@@ -12,25 +19,17 @@
   font-family: Helvetica, sans-serif;
   position: relative;
 }
-.mobile-banner {
-  display: none;
-}
-
-.banner-inicio {
-  width: 100%;
-  height: 500px;
-}
-.banner-details {
+.banner-home-details {
   width: 30%;
-  height: 500px;
-  margin-top: 50px;
+  height: 400px;
+  margin-top: 0;
   margin-left: 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
 }
-.banner-title {
+.banner-home-title {
   width: 100%;
   height: 160px;
   margin-top: 25px;
@@ -52,11 +51,75 @@
   display: flex;
   justify-content: space-between;
 }
-.banner-description {
+.banner-home-description {
   width: 100%;
   height: 60px;
   margin-top: 300px;
   margin-bottom: 70px;
   position: absolute;
   font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .banner-home{
+    display: none;
+  }
+  .mobile-banner {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin-top: 0;
+  }
+  .mobile-banner-img {
+    width: 100%;
+    height: 260px;
+    background-image: url("https://rainhavermelha.com/wp-content/uploads/2019/04/Z-Nation-Black-Summer-Season-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .mobile-info-container {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    line-height: 5px;
+    .info-title {
+      width: 100%;
+      height: 30%;
+      line-height: 18px;
+      font-size: 18px;
+    }
+    .info-details {
+      width: 70%;
+      height: 30%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .info-button {
+      width: auto;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2px;
+      p {
+        height: 100%;
+        width: 40%;
+        text-align: center;
+        line-height: 30px;
+      }
+      .play-button {
+        background-color: red;
+      }
+      .episodes-button {
+        background-color: rgba(36, 36, 36, 0.7);
+        border: 1px solid white;
+      }
+    }
+  }
 }

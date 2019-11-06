@@ -1,7 +1,9 @@
 $mainColor: rgb(17, 17, 17);
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: $mainColor;
+  .home-main-container {
+    margin: 0;
+    padding: 0;
+  }
 }

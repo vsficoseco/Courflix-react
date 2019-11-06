@@ -6,7 +6,7 @@ class Item extends React.Component {
     return (
       <React.Fragment>
         <div className="image-container">
-          <img src={this.props.images.img} alt="" />
+          <img src={this.props.item.img} alt="" className="image-cover" />
         </div>
       </React.Fragment>
     );

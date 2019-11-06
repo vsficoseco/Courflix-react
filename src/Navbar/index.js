@@ -1,14 +1,17 @@
 import React from "react";
 import "./style.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import MenuMobile from "../MenuMobile";
 
 class Navbar extends React.Component {
   render() {
     return (
       <React.Fragment>
         <div className="header-container">
-          {/* <div className="header-menu-icon-container">
-            <i className="fas fa-bars"></i>
-          </div> */}
+          <div className="header-menu-icon-container">
+            <FontAwesomeIcon icon={faBars} />
+          </div>
 
           <div className="header-logo-container">
             <img
@@ -27,6 +30,7 @@ class Navbar extends React.Component {
             </ul>
           </div>
         </div>
+        <MenuMobile />
       </React.Fragment>
     );
   }

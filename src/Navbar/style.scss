@@ -31,3 +31,25 @@
     margin-left: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .header-list-container {
+    display: none;
+  }
+  .header-menu-icon-container {
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+  }
+  .header-logo-container {
+    margin-left: 0;
+  }
+  .list-container {
+    margin-top: 20px;
+  }
+}
